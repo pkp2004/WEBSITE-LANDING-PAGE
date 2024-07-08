@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Landing page</title>
+<style type="text/css">
+    {padding:0; margin:0; box-sizing: border-box;}
+    header{
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(rgba(0, 185, 25, 0.8),rgba(18, 181, 40, 0.2)), 
+                    url('web image.jpg');
+        background-size: cover;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        font-weight: bold;
+        color:rgb(255, 255, 255);
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+    .menu a{
+    text-decoration: none;
+    color: rgb(27, 225, 23);
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+    }
+    .menu a:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width:0%;
+        height:100%;
+        border-bottom: 2px solid rgb(26, 163, 55);
+        transition: 0.4s linear;
+    }
+    .menu a:hover:before{
+        width: 90%;
+    }
+    .contact a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        font-size: 20px;
+        background: greenyellow;
+        border-radius: 8px;
+        transition: 0.4s;
+    }
+    .contact a:hover{
+        background-color: transparent;
+        border:1px greenyellow;
+    }
+    .h-txt{
+        max-width: 650px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color:rgb(0, 0, 0);
+    }
+    .h-txt h2{
+        letter-spacing: 5px;
+        color:white;
+    }
+    .h-txt h1{
+        font-size: 2.5em;
+    }
+    .h-txt a{
+        text-decoration: none;
+        background: greenyellow;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        border-radius: 8px;
+        transition: 0.4s;
+    }
+    .h-txt a:hover{
+        background-color: transparent;
+        border:1px greenyellow;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                MY RESUME
+            </div>
+            <div class="menu">
+                <a href="#">ABOUT ME</a>
+                <a href="#">MY EDUCATION</a>
+                <a href="#">MY SKILLS</a>
+                <a href="#">EXPERIENCE</a>
+            </div>
+            <div class="contact">
+                <a href="#">CONTACT ME </a>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <h2>WELCOME TO MY RESUME!</h2>
+            <h1>I AM A WEB DEVELOPER AND HAS DONE MANY PROJECTS.</h1>
+            <h2>PLEASE CLICK THE BUTTON BELOW TO CHECK OUT SOME OF MY PROJECTS.</h2>
+
+            <br>
+            <a href="#">MY PROJECTS!</a>
+        </section>
+    </header>
+</body>
+</html>
